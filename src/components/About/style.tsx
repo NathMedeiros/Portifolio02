@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { styled } from "@/styles/stitches.config";
 import backgroundAbout from "@/public/static/img/background/images.jpg";
 

@@ -1,9 +1,6 @@
 import { styled } from "@/styles/stitches.config";
 import { Flex } from "@/styles/Global";
 import { Button } from "@/styles/Buttons";
-import { css } from "@stitches/react";
-
-import meIlustration from "@/public/static/img/background/me-ilustration.svg";
 import backgroundImg from "@/public/static/img/background/image.jpg";
 
 import dots from "@/public/static/img/background/dots.svg";
@@ -39,6 +36,13 @@ export const HeaderContent = styled("div", {
   },
   "@mobile": {
     width: "100%",
+  },
+
+  "& .typeAnimation": {
+    minWidth: "20vh",
+    "@mobile": {
+      minWidth: "40vh",
+    },
   },
 });
 
@@ -148,5 +152,16 @@ export const ProjectAreaWrapperColumns = styled("div", {
 export const DivButton = styled("div", {
   backgroundColor: "transparent",
   padding: "20px",
-  marginBottom: "-85px",
+  marginBottom: "-73px",
+
+  "& img": {
+    width: "30px",
+    height: "auto",
+  },
+  "& button": {
+    color: "transparent",
+    backgroundColor: "transparent",
+    cursor: "pointer",
+    border: "none",
+  },
 });

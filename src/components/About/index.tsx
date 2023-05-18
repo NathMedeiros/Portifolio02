@@ -24,6 +24,7 @@ export const About: React.FC<AboutProps> = ({ aboutText }) => {
         <h2>About me</h2>
         <img src={vetorSeta} alt="" />
       </div>
+
       <div className={`accordion ${isOpen ? "open" : ""}`}>
         {isOpen && (
           <Content className="content">
