@@ -1,6 +1,9 @@
 import { StackCard } from "./style";
 import { Text } from "@/styles/Text";
 import { IconType } from "react-icons/lib";
+import React, { useState } from "react";
+import { FaStar } from "react-icons/fa";
+import { CSSTransition } from "react-transition-group";
 
 interface StackProps {
   title: string;
@@ -25,3 +28,34 @@ export const Stack = (
     </StackCard>
   );
 };
+
+const IconAnimation = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  return (
+    <div
+      className="icon-container"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <CSSTransition
+        in={isHovered}
+        timeout={300}
+        classNames="icon-rotate"
+        unmountOnExit
+      >
+        <FaStar className="icon" />
+      </CSSTransition>
+    </div>
+  );
+};
+
+export default IconAnimation;

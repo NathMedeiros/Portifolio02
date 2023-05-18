@@ -47,6 +47,11 @@ export const NavbarLinks = styled(Flex, {
       paddingLeft: 0,
     },
   },
+  "& a:hover": {
+    color: "$brand1",
+    textShadow: "15px 20px #558abb",
+    transitionDuration: "1s", // Correção da propriedade
+  },
 });
 
 export const NavbarMobileArea = styled("div", {

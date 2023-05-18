@@ -50,6 +50,16 @@ export const Button = styled("button", {
           color: "$grey1",
         },
       },
+      language: {
+        borderColor: "$grey4",
+        color: "$grey4",
+        backgroundColor: "transparent",
+
+        "&:hover": {
+          backgroundColor: "$grey4",
+          color: "$grey3",
+        },
+      },
       toggleTheme: {
         height: "2.2rem",
         minWidth: "3rem",

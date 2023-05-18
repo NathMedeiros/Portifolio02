@@ -4,17 +4,17 @@ import { Button } from "@/styles/Buttons";
 import { css } from "@stitches/react";
 
 import meIlustration from "@/public/static/img/background/me-ilustration.svg";
-import backgroundImg from "@/public/static/img/background/header-bg.svg";
+import backgroundImg from "@/public/static/img/background/image.jpg";
 
 import dots from "@/public/static/img/background/dots.svg";
 
 export const Header = styled("header", {
-  backgroundColor: "$grey1",
+  backgroundColor: "black",
   padding: "12rem 0 8rem 0",
   backgroundImage: `url(${backgroundImg})`,
+  backgroundSize: "800px",
   backgroundRepeat: "no-repeat",
-  backgroundPosition: "right",
-  backgroundAttachment: "fixed",
+  backgroundPosition: "right 10% center",
   borderBottom: "2px solid $grey5",
   "@tablet": {
     backgroundPosition: "right -10% center",
@@ -143,4 +143,10 @@ export const ProjectAreaWrapperColumns = styled("div", {
   "@mobile": {
     flexDirection: "column",
   },
+});
+
+export const DivButton = styled("div", {
+  backgroundColor: "transparent",
+  padding: "20px",
+  marginBottom: "-85px",
 });

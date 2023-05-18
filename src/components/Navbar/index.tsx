@@ -1,6 +1,7 @@
 import { useState } from "react";
 import useMedia from "use-media";
 import { userData } from "@/utils/userData";
+import logoImg from "../../public/static/img/favicon/icon.png";
 
 import {
   Navbar as NavbarWrapper,
@@ -21,7 +22,6 @@ export interface MenuButtonOpen {
 }
 
 export const NavBar = (): JSX.Element => {
-
   const isWide = useMedia({ maxWidth: "991px" });
 
   document.title = userData.nameUser;
@@ -37,7 +37,8 @@ export const NavBar = (): JSX.Element => {
       <Container>
         <NavbarMobileArea>
           <LogoTipo>
-            <LogoTipoText>{userData.nameUser}</LogoTipoText>
+            <img src={logoImg} alt="" />
+            {/* <LogoTipoText>{logoImg}</LogoTipoText> */}
           </LogoTipo>
           {isWide && (
             <Button
@@ -49,9 +50,7 @@ export const NavBar = (): JSX.Element => {
             </Button>
           )}
         </NavbarMobileArea>
-        <Flex>
-          {isWide ? open && <NavLinks /> : <NavLinks />}
-        </Flex>
+        <Flex>{isWide ? open && <NavLinks /> : <NavLinks />}</Flex>
       </Container>
     </NavbarWrapper>
   );
@@ -66,6 +65,9 @@ export const NavLinks = (): JSX.Element => {
       <Button type="btLink" as="a" color="grey4" href={`#projects`}>
         Projects
       </Button>
+      {/* <Button type="btLink" as="a" color="grey4" href={`#aboutMe`}>
+        About-me
+      </Button> */}
       <Button type="btLink" as="a" color="grey4" href={`#contact`}>
         Contact
       </Button>

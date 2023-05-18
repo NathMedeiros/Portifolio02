@@ -45,11 +45,7 @@ export const StackCard = styled("div", {
   },
 
   "&:hover": {
-    [`& ${Text}`]: {
-      opacity: 1,
-      top: 0,
-      transform: "translateY(-140%)",
-      animation: `${scaleUp} 200ms`,
-    },
+    boxShadow: "10px 5px 0px 0px rgba(86, 11, 173, 0.8)",
+    transform: "scale(1.1)",
   },
 });

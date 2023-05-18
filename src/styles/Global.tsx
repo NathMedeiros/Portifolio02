@@ -81,10 +81,9 @@ export const globalStyles = globalCss({
 });
 
 export const GlobalStyle = ({ children }: GlobalStyleProps): JSX.Element => {
-
   const theme = createTheme({
     colors: {
-      brand1: "#623CEA",
+      brand1: "#560bad",
       brand2: "#311E75",
 
       grey0: "#0A0A0B",
@@ -115,11 +114,11 @@ export const GlobalStyle = ({ children }: GlobalStyleProps): JSX.Element => {
       sectionMobile: "4rem",
     },
     fonts: {
-      titles: '"IBM Plex Sans", sans-serif;',
+      titles: '"Cinzel", serif;',
       texts: '"Inter", sans-serif',
     },
     fontSizes: {
-      title1: "2.75rem",
+      title1: "2.55rem",
       title2: "1.75rem",
       title3: "1.50rem",
       title4: "1.25rem",
