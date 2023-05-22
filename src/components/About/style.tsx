@@ -11,7 +11,7 @@ export const Container = styled("div", {
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
   color: "$grey3",
-  padding: "20px",
+
   borderBottom: "2px solid var(--colors-grey5)",
 
   "& img": {
@@ -33,7 +33,7 @@ export const Content = styled("div", {
   cursor: "pointer",
   backgroundColor: "transparent",
   color: "$grey3",
-  padding: "20px 100px 0px 100px",
+  padding: "20px 5% 0px 5%",
 
   "& p": {
     margin: "0",

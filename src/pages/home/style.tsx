@@ -39,7 +39,7 @@ export const HeaderContent = styled("div", {
   },
 
   "& .typeAnimation": {
-    minWidth: "20vh",
+    minWidth: "28vh",
     "@mobile": {
       minWidth: "40vh",
     },

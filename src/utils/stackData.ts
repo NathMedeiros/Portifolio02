@@ -20,7 +20,7 @@ export const stackData = [
     img: FaCss3Alt,
   },
   {
-    title: "JS",
+    title: "JavaScript",
     img: FaJs,
   },
   { title: "TypeScript", img: SiTypescript },
